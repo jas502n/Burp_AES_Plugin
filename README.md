@@ -61,7 +61,10 @@ https://github.com/c0ny1/jsEncrypter
 ```
 ## 0x04 新建包名 burp, java 类 BurpExtender,实现 AES 加密方法
 IBurpExtender  官方必须要implements
+
 IIntruderPayloadProcessor 由于我们要用到Intruder的爆破功能即可,所以需要implements
+
+##### encryptAES (设置  AES iv 值)
 
 ```
     public static String encryptAES(String paramString1, String paramString2)
@@ -75,7 +78,7 @@ IIntruderPayloadProcessor 由于我们要用到Intruder的爆破功能即可,所
 
 ```
 
-processPayload 方法
+processPayload 方法 (设置 AES KEY)
 
 ```
     public byte[] processPayload(byte[] currentPayload, byte[] originalPayload, byte[] baseValue) {
