@@ -1,5 +1,25 @@
 # Burpsuite Plugin For AES Crack
 
+## 0x00 mvn install to get jar
+
+`git clone https://github.com/jas502n/Burp_AES_Plugin/`
+`cd ~/github/Burp_AES_Plugin/AESDecode`
+`vi src/main/java/burp/BurpExtender.java`
+`mvn install`
+
+```
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ AESCrack ---
+[INFO] Installing /root/github/Burp_AES_Plugin/AESDecode/target/AESCrack-1.0-SNAPSHOT.jar to /root/.m2/repository/com/jas502n/AESCrack/1.0-SNAPSHOT/AESCrack-1.0-SNAPSHOT.jar
+[INFO] Installing /root/github/Burp_AES_Plugin/AESDecode/pom.xml to /root/.m2/repository/com/jas502n/AESCrack/1.0-SNAPSHOT/AESCrack-1.0-SNAPSHOT.pom
+[INFO] Installing /root/github/Burp_AES_Plugin/AESDecode/target/AESCrack-1.0-SNAPSHOT-jar-with-dependencies.jar to /root/.m2/repository/com/jas502n/AESCrack/1.0-SNAPSHOT/AESCrack-1.0-SNAPSHOT-jar-with-dependencies.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.627 s
+[INFO] Finished at: 2020-06-18T00:17:09+08:00
+[INFO] ------------------------------------------------------------------------
+```
+
 ## 0x01 最近遇到挺多网站前端用的 aes 加密登录,就想弄一个 Burpsuite AES 加密爆破插件
 
 ![](./key.png)
