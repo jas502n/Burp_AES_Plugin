@@ -64,6 +64,15 @@ IBurpExtender  官方必须要implements
 
 IIntruderPayloadProcessor 由于我们要用到Intruder的爆破功能即可,所以需要implements
 
+```
+public class BurpExtender implements IBurpExtender, IIntruderPayloadProcessor {
+    private static IExtensionHelpers helpers;
+    public final static String extensionName = "AESCrack"; // 插件名称
+    public final static String version = "1.0";
+    public final static String AES_IV = "1234567812345678"; // 设置 AES IV 值
+    public final static String AES_KEY = "key12345key67890"; // 设置 AES KEY 值
+```
+
 ##### encryptAES (设置  AES iv 值)
 
 ```
