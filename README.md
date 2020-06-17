@@ -3,9 +3,13 @@
 ## 0x00 mvn install to get jar
 
 `git clone https://github.com/jas502n/Burp_AES_Plugin/`
+
 `cd ~/github/Burp_AES_Plugin/AESDecode`
+
 `vi src/main/java/burp/BurpExtender.java`
+
 `mvn install`
+
 
 ```
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ AESCrack ---
