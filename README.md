@@ -111,7 +111,11 @@ Intellij-idea 如何编译maven工程
 https://blog.csdn.net/u013044029/article/details/71681891
 
 编译运行成功,在 target 目录,得到 aes.jar 文件
-一个有依赖(文件大),一个没有依赖(文件小)
+
+一个没有依赖(文件小) `AESCrack-1.0-SNAPSHOT.jar`
+一个有依赖(文件大) `AESCrack-1.0-SNAPSHOT-jar-with-dependencies.jar`
+
+Burpsuite 加载插件时,使用没有依赖的就行了 `AESCrack-1.0-SNAPSHOT.jar`
 
 ![](./target.png)
 
